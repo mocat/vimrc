@@ -1,15 +1,15 @@
-"if filereadable($VIMRUNTIME . "/macros/matchit.vim")
-" so $VIMRUNTIME/macros/matchit.vim
-"endif
-
-"colo bandit
+call pathogen#infect()
+call pathogen#helptags()
 syntax on
+filetype plugin indent on
+"colo bandit
 
 set tags=./tags;
 
-" Plugin: Taglist
-"let Tlist_Ctags_Cmd = 'D:\tools\vim\ctags58\ctags.exe'
-"nnoremap <F12> :TlistToggle<CR>
+" Plugin: Tagbar
+let g:tagbar_left = 1
+let g:tagbar_width = 30
+nnoremap <F12> :TagbarToggle<CR>
 
 " Jump to previous/next difference in diff mode
 noremap <A-1> [c
