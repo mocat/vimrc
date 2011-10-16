@@ -11,6 +11,10 @@ let g:tagbar_left = 1
 let g:tagbar_width = 30
 nnoremap <F12> :TagbarToggle<CR>
 
+" Plugin: NERDTree
+let g:NERDTreeWinPos = "right"
+nnoremap <F11> :NERDTreeToggle<CR>
+
 " Jump to previous/next difference in diff mode
 noremap <A-1> [c
 noremap <A-2> ]c
